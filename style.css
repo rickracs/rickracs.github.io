@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.container {
+    border: solid red 3px;
+    display:flex;
+    height:auto;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+h3 {
+    padding-top:1em;
+}
+.img-div {
+    border:solid grey 1px;
+    width:auto;
+    margin: 5px;
+
+   
+}
+img {
+    padding: 3px 3px 0 3px;
+    width:150px;
+}
+
+.img-caption {
+    font-size: 12px;
+    text-align:center;
+    padding-bottom:3px;
+}
+
+#img-poe, #img-doyle {
+    float:right;
+    clear:right;
+}
+
+#img-dickens {
+    float:left;
+    clear:left;
+}
+
+#navbar {
+   
+    width: 200px;
+    height:100%; 
+   position: fixed;
+    text-align: center;
+    overflow: auto ;
+    display:flex;
+    flex-direction: column;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: lightgray;
+}
+#classic-features {
+    padding-left:20%;
+   
+  
+}
+#main-doc {
+    border: solid green 3px;
+    margin-left: 200px;
+    flex: 1; 
+}
+
+.main-section {
+    border: solid blue 3px;
+    padding-left:10px;
+    overflow:auto;
+}
+
+#navbar ul {
+    font-size: 18px;
+    list-style-type: none;
+    margin: 0;
+  padding: 0;
+  border: solid black 1px;
+}
+li a {
+    text-decoration: none;
+    display:block;
+    height:50px;
+    padding: 8px 16px;
+    border-bottom: solid black 1px;
+    text-align:center;
+    height:50px;
+}
+
+li a:hover {
+    background: yellow;
+}
+
+#navbar li:last-child a{
+    border-bottom: none;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -5px;
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  
+	#navbar {
+        height:100px;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+        position: fixed;
+        align-items: center;
+        display:flex;
+        flex-direction: column;
+
+    }
+    #navbar ul {
+        display: flex;
+    }
+    #navbar li a{
+        padding-right: 8px;
+        padding-left: 8px;
+        height:70px;
+        border-right: solid black 1px;
+        border-bottom: none;
+    }
+    #navbar li:last-child a {
+        
+        border-right: none;
+    }
+   #main-doc {
+        margin-left: 0;
+       margin-top: 100px;
+    }
+    a.anchor {
+        top: -105px;      
+    }
+   
+}
